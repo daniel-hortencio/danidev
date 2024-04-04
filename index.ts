@@ -1,3 +1,1 @@
-export function isRunning(): void {
-  console.log("Is Running!");
-}
+import * as utils from "./utils";
