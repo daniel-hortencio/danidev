@@ -1,3 +1,1 @@
-export const isSSR = typeof window === "undefined";
-
-console.log({ isSSR });
+export const isSSR = () => typeof window === "undefined";
