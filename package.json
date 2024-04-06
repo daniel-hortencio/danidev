@@ -1,10 +1,19 @@
 {
   "name": "danidev",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "main": "index.ts",
   "types": "index.d.ts",
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^18.2.74",
+    "@types/react-dom": "^18.2.24",
+    "react": "^18.2.0",
+    "typescript": "^5.4.4"
+  },
+  "dependencies": {
+    "@phosphor-icons/react": "^2.1.4"
+  }
 }
