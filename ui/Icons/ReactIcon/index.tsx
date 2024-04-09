@@ -38,14 +38,14 @@ export const AllIcons = {
 
 export type ReactIconName = keyof typeof AllIcons;
 
-interface IconProps {
+type IconProps = {
   name: ReactIconName;
   size?: number;
   color?: string;
   fill?: string;
   stroke?: string;
   hoverColor?: string;
-}
+};
 
 export const ReactIcon = ({ name, color = "", ...rest }: IconProps) => {
   const RIcon =

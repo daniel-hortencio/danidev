@@ -1,11 +1,11 @@
 import * as React from "react";
 import * as PhosphorIcons from "@phosphor-icons/react";
 
-interface Props {
+type Props = {
   name: PhosphorIconName;
   size?: number;
   color?: string;
-}
+};
 
 export const PhosphorIcon = ({ name, size = 20, color = "" }: Props) => {
   const PhIcon: any =
