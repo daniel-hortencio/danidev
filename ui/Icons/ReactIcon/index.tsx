@@ -38,7 +38,7 @@ export const AllIcons = {
 
 export type ReactIconName = keyof typeof AllIcons;
 
-type IconProps = {
+export type ReactIconProps = {
   name: ReactIconName;
   size?: number;
   color?: string;
@@ -47,7 +47,7 @@ type IconProps = {
   hoverColor?: string;
 };
 
-export const ReactIcon = ({ name, color = "", ...rest }: IconProps) => {
+export const ReactIcon = ({ name, color = "", ...rest }: ReactIconProps) => {
   const RIcon =
     AllIcons[name as keyof typeof AllIcons] || AllIcons.FaRegWindowClose;
 

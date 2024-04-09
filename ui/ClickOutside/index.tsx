@@ -1,8 +1,8 @@
 "use client";
 
-import React, { ReactElement, useEffect, useRef } from "react";
+import React from "react";
 
-interface Props
+export interface ClickOutsideProps
   extends React.DetailedHTMLProps<
     React.HTMLAttributes<HTMLDivElement>,
     HTMLDivElement
@@ -11,8 +11,12 @@ interface Props
   onClickOutsite: () => void;
 }
 
-export const ClickOutside = ({ element, onClickOutsite, ...rest }: Props) => {
-  const ref = useRef<HTMLDivElement | null>(null);
+export const ClickOutside = ({
+  element,
+  onClickOutsite,
+  ...rest
+}: ClickOutsideProps) => {
+  const ref = React.useRef<HTMLDivElement | null>(null);
 
   const handleClickOutside = (event: any) => {
     if (ref.current && !ref.current.contains(event.target)) {
@@ -20,7 +24,7 @@ export const ClickOutside = ({ element, onClickOutsite, ...rest }: Props) => {
     }
   };
 
-  useEffect(() => {
+  React.useEffect(() => {
     document.addEventListener("click", handleClickOutside, true);
     return () => {
       document.removeEventListener("click", handleClickOutside, true);

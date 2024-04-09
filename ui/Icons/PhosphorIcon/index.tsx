@@ -1,13 +1,17 @@
 import * as React from "react";
 import * as PhosphorIcons from "@phosphor-icons/react";
 
-type Props = {
+export type PhosphorIconProps = {
   name: PhosphorIconName;
   size?: number;
   color?: string;
 };
 
-export const PhosphorIcon = ({ name, size = 20, color = "" }: Props) => {
+export const PhosphorIcon = ({
+  name,
+  size = 20,
+  color = "",
+}: PhosphorIconProps) => {
   const PhIcon: any =
     PhosphorIcons[name as keyof typeof PhosphorIcons] || PhosphorIcons.XSquare;
 
