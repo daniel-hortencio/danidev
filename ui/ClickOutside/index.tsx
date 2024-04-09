@@ -1,19 +1,9 @@
+"use client";
+
 import React from "react";
+// import { ClickOutsideProps } from "./types";
 
-export interface ClickOutsideProps
-  extends React.DetailedHTMLProps<
-    React.HTMLAttributes<HTMLDivElement>,
-    HTMLDivElement
-  > {
-  element?: keyof HTMLElementTagNameMap;
-  onClickOutsite: () => void;
-}
-
-export const ClickOutside = ({
-  element,
-  onClickOutsite,
-  ...rest
-}: ClickOutsideProps) => {
+export const ClickOutside = ({ element, onClickOutsite, ...rest }: any) => {
   const ref = React.useRef<HTMLDivElement | null>(null);
 
   const handleClickOutside = (event: any) => {

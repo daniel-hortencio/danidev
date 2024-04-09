@@ -1,6 +1,6 @@
 import React from "react";
 import { AllIcons } from "./lib";
-import { ReactIconProps } from "./types";
+import type { ReactIconProps } from "./types";
 
 export const ReactIcon = ({ name, color = "", ...rest }: ReactIconProps) => {
   const RIcon =

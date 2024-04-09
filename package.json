@@ -1,9 +1,10 @@
 {
   "name": "danidev",
-  "version": "1.0.11",
+  "version": "1.0.18",
   "description": "",
   "main": "index.ts",
-  "types": "index.d.ts",
+  "types": "types.ts",
+  "exports": {},
   "keywords": [],
   "author": "",
   "license": "ISC",
