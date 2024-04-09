@@ -1,3 +1,11 @@
+// Elements
 export { ClickOutside } from "./ClickOutside";
-export { PhosphorIcon, PhosphorIconName } from "./Icons/PhosphorIcon";
-export { ReactIcon, ReactIconName } from "./Icons/ReactIcon";
+export { PhosphorIcon } from "./Icons/PhosphorIcon";
+export { ReactIcon } from "./Icons/ReactIcon";
+
+// Types
+export type {
+  PhosphorIconName,
+  PhosphorIconProps,
+} from "./Icons/PhosphorIcon/types";
+export type { ReactIconName, ReactIconProps } from "./Icons/ReactIcon/types";
