@@ -1,19 +1,31 @@
 {
   "name": "danidev",
-  "version": "1.0.18",
+  "version": "1.0.29",
   "description": "",
-  "main": "index.ts",
-  "types": "types.ts",
-  "exports": {},
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
   "devDependencies": {
     "@types/react": "^18.2.74",
     "@types/react-dom": "^18.2.24",
     "@types/react-icons": "^3.0.0",
     "react": "^18.2.0",
     "typescript": "^5.4.4"
+  },
+  "scripts": {
+    "prebuild": "npm run clean",
+    "build": "tsc"
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.1.4",

@@ -1,9 +1,13 @@
 "use client";
 
 import React from "react";
-// import { ClickOutsideProps } from "./types";
+import { ClickOutsideProps } from "./types";
 
-export const ClickOutside = ({ element, onClickOutsite, ...rest }: any) => {
+export const ClickOutside = ({
+  element,
+  onClickOutsite,
+  ...rest
+}: ClickOutsideProps) => {
   const ref = React.useRef<HTMLDivElement | null>(null);
 
   const handleClickOutside = (event: any) => {
