@@ -3,7 +3,7 @@ import { WrapperProps } from "../types/Wrapper";
 import { Container } from "../Container";
 
 interface Props extends WrapperProps {
-  contentClassName: string;
+  contentClassName?: string;
 }
 
 export const Section = ({
