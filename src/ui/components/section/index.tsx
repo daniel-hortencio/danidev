@@ -1,16 +1,16 @@
-import React from "react";
-import { WrapperProps } from "../types/Wrapper";
-import { Container } from "../Container";
+import React from 'react';
+import { WrapperProps } from '../../types/Wrapper';
+import { Container } from '../container';
 
 interface Props extends WrapperProps {
   contentClassName?: string;
 }
 
 export const Section = ({
-  as: AsElement = "section",
+  as: AsElement = 'section',
   className,
   children,
-  contentClassName = "",
+  contentClassName = '',
 }: Props) => (
   <AsElement {...{ className }}>
     <Container className={contentClassName}>{children}</Container>
