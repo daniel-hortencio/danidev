@@ -1,5 +1,3 @@
-import './ui/libs/tailwind/styles.css';
-
 // Utils
 export { isSSR } from './utils/isSSR';
 export { mask } from './utils/mask';

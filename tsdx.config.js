@@ -1,12 +1,11 @@
-import postcss from 'rollup-plugin-postcss';
+const postcss = require('rollup-plugin-postcss');
 
-export default {
+module.exports = {
   rollup(config, options) {
     config.plugins.push(
       postcss({
         config: {
           path: './postcss.config.js',
-          ctx: null,
         },
         extensions: ['.css'],
         minimize: true,

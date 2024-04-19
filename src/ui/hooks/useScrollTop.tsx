@@ -6,7 +6,7 @@ export const useScrollTop = (distance_to_top: number) => {
   const [scrolled, setScrolled] = useState(false);
 
   const handleScroll = () => {
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
 
     if (scrollTop > distance_to_top) {
       setScrolled(true);

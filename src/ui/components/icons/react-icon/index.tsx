@@ -1,8 +1,5 @@
 import React from 'react';
-import { AllIcons } from '../../../libs/react-icons/lib';
-import type { ReactIconProps } from './types';
-
-import { AllIcons } from '../../../libs/react-icons/lib';
+import { AllIcons } from '../../../libs/react-icons/all-icons';
 
 export type ReactIconName = keyof typeof AllIcons;
 
