@@ -1,6 +1,6 @@
 {
   "name": "danidev",
-  "version": "1.1.5",
+  "version": "1.2.0",
   "description": "",
   "keywords": [],
   "author": "",
@@ -31,7 +31,6 @@
   "devDependencies": {
     "@types/react": "^18.2.74",
     "@types/react-dom": "^18.2.24",
-    "@types/react-icons": "^3.0.0",
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.38",
     "postcss-import": "^16.1.0",
@@ -47,7 +46,6 @@
   "dependencies": {
     "@phosphor-icons/react": "^2.1.4",
     "clsx": "^2.1.0",
-    "react-icons": "^5.0.1",
     "tailwind-merge": "^2.2.2"
   }
 }
